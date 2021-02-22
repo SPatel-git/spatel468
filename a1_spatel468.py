@@ -31,12 +31,18 @@ def leap_year(obj):
             status = False
             if obj%400 == 0:
     return status
+
 def sanitize(obj1,obj2):
     '''
-    put your function level docstring here ...
+    This function takes in two string objects, obj1 being the string to
+    sanitize, and obj2 the allowed characters of the string. Every character
+    of obj1 that is not in obj2 will be removed and the final string is returned
     '''
-    ...
     
+   results = ""
+    for character in obj1:
+        if character in obj2:
+            results = results + character
     return results
 
 def size_check(obj, intobj):
