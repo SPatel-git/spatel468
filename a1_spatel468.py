@@ -60,10 +60,16 @@ def size_check(obj, intobj):
 
 def range_check(obj1, obj2):
     '''
-    put your function level docstring here ..
+    This function takes in two arguements, one of them is a integer and the other
+    arguement is a tuple with two integer values. This function will return True
+    if the first arguement is between the two values in the tuple object, and it
+    will return false if it isn't.
     '''
-    ...
-    
+    low = obj2[0]
+    high = obj2[1]
+    status = False
+    if low <= obj1 <= high:
+        status = True
     return status
     
 def usage():    
