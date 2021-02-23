@@ -47,10 +47,15 @@ def sanitize(obj1,obj2):
 
 def size_check(obj, intobj):
     '''
-    put your function level docstring here ..
+    This function will take in a two arguements, the first being 
+    an collection data type and the second arguement being an
+    integer. If the collection data type is the specified length
+    from the integer arguement, this function will return true, if 
+    not it will return false.
     '''
-    ...
-
+    status = False
+    if len(obj) == intobj:
+        status = True
     return status
 
 def range_check(obj1, obj2):
