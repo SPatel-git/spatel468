@@ -24,12 +24,14 @@ def leap_year(obj):
     It will determine if the integer given is a leap year, and it returns
     true if it is a leap year and it will return False if it is not.
     '''
+
     status = False
     if obj%4 ==0:
         status = True
         if obj%4 == 0 and obj%100 == 0:
             status = False
             if obj%400 == 0:
+                status = True
     return status
 
 def sanitize(obj1,obj2):
@@ -39,7 +41,7 @@ def sanitize(obj1,obj2):
     of obj1 that is not in obj2 will be removed and the final string is returned
     '''
     
-   results = ""
+    results = ""
     for character in obj1:
         if character in obj2:
             results = results + character
@@ -53,9 +55,11 @@ def size_check(obj, intobj):
     from the integer arguement, this function will return true, if 
     not it will return false.
     '''
+
     status = False
     if len(obj) == intobj:
         status = True
+
     return status
 
 def range_check(obj1, obj2):
@@ -65,6 +69,7 @@ def range_check(obj1, obj2):
     if the first arguement is between the two values in the tuple object, and it
     will return false if it isn't.
     '''
+
     low = obj2[0]
     high = obj2[1]
     status = False
@@ -74,9 +79,11 @@ def range_check(obj1, obj2):
     
 def usage():    
     '''
-    put your function level docstring here ...
+    This function will output a string that describes how
+    to utilize this script.
     '''
-    ...
+    
+    status = 'This script requires the user to enter ONE arguement which is the date in YYYYMMDD, YYYY/MM/DD, YYYY-MM-DD, or YYYY.MM.DD format.\nIt will then print the date in mmm d, yyyy, where "mmm" is the three letter abbreviated months name, d is a one or two-digit day of the month, and yyyy is the four-digit year\n(ex. 20201007 -> Oct 7, 2020)'
     return status
 
 if __name__ == "__main__":
