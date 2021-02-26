@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-''' template for ops435 assignment 1 script
-    put your script level docstring here...
-    you can have more than one line of docstring.
-    Please personlize the following author declaration:
+''' This programs is for converting date of births(DOB) in the format
+"YYYYMMDD", "YYYY/MM/DD", "YYYY-MM-DD", and "YYYY.MM.DD" to the format:
+'mmm d, yyyy", where "mmm" is the three letter abbreviated month's name, 
+'d' is a one or two-digit day of the month, and 'yyyy' is the four-digit year.
+(ex. 2020/10/07 ---> "Oct 7, 2020").
+
 -----------------------------------------------------------------------
 OPS435 Assignment 1 - Winter 2021
 Program: a1_spatel468.py
