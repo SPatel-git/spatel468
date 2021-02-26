@@ -83,7 +83,7 @@ def usage():
     to utilize this script.
     '''
     
-    status = 'This script requires the user to enter ONE arguement which is the date in YYYYMMDD, YYYY/MM/DD, YYYY-MM-DD, or YYYY.MM.DD format.\nIt will then print the date in mmm d, yyyy, where "mmm" is the three letter abbreviated months name, d is a one or two-digit day of the month, and yyyy is the four-digit year\n(ex. 20201007 -> Oct 7, 2020)'
+    status = 'Usage: ' + sys.argv[0] + ' YYYYMMDD|YYYY/MM/DD|YYYY-MM-DD|YYYY.MM.DD'
     return status
 
 if __name__ == "__main__":
